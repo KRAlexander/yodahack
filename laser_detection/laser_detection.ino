@@ -32,7 +32,7 @@ void loop()
   delay(10);
 
   boolean b = laser_on(5,600);
-  
+  Serial.println(analogRead(5));
   if (!a&&b) {
     Serial.println("All is Well");
   } else {
